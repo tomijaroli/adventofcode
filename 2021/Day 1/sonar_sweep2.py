@@ -13,3 +13,7 @@ for index, depth in enumerate(depths):
     previous_sum = sum_of_windows
 
 print(number_of_increments)
+
+# I'm just learning Python, and I found out there is a one liner solution
+depths_increased = sum((int(a) < int(d) for a, d in zip(depths, depths[3:])))
+print(depths_increased)

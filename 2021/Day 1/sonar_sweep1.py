@@ -10,3 +10,7 @@ for depth in depths:
     previous = depth
 
 print(number_of_increments)
+
+# I'm just learning Python, and I found out there is a one liner solution
+depth_increased = len([depth for index, depth in enumerate(depths) if int(depth) > int(depths[index - 1])])
+print(depth_increased)
